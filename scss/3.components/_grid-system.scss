@@ -1,0 +1,60 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+    padding: 0 10px;
+    @include media {
+      max-width: 1400px;
+      @include autoblock;
+    }
+  }
+
+  .centered {
+    @include media {
+      @include autoblock;
+    }
+  }
+
+  .row {
+    @include fdisplay ($dir: column);
+    padding: 1em 10px;
+    @include media {
+      @include fdisplay($dir: row);
+    }
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: $flexb;
+    min-height: 25px;
+    padding: 10px;
+    @include border-radius;
+    @include media {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+      & + & {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+  @each $key,$color in $grid-background {
+    .theme.col-#{$key} {
+        background-color: $color;
+    }
+}
+  
+  .card {
+    flex-basis: $flexb;
+  } 
+
+  @include media{
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex-basis: $i*8.33%;
+    }
+  }
+}

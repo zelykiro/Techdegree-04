@@ -1,0 +1,29 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    color: $white;
+    padding: 10px 0;
+    text-transform: uppercase;
+    @include measurements($width:100%);
+    @include border;
+    @include border-radius;
+    @include media {
+        padding: 10px 30px;
+        & + & {
+            margin-left: 10px;
+        }
+    }
+  }
+
+@each $key,$color in $button-background {
+    .#{$key}{
+        background-color: $color;
+        &:hover{
+            background-color: lighten($color,10%);
+        }
+    }
+}
+  

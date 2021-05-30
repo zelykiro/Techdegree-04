@@ -1,0 +1,35 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img {
+  &-avatar {
+    @include autoblock {
+      margin-top: 10px;
+      max-width: 100%; 
+      max-height: 100%;
+    }
+  }
+  
+  &-frame {
+    @include autoblock {
+      margin-top: 10px;
+      max-width: 100%;
+      padding: 13px;
+      border: 1px solid $color-tertiary;
+    }
+  }
+  
+  &-logo {
+    @include autoblock;
+  }
+}
+
+.logo {
+  @include media {
+    margin-left: initial;
+    margin-right: initial;  
+  }
+}
+
+  

@@ -1,0 +1,53 @@
+/* ============================================= */
+/*                Variables                      */
+/* ============================================= */
+
+// ============== TYPEFACE ============== 
+
+$typeface-primary: 'Lato', sans-serif;
+
+
+// ============== COLORS ============== 
+
+$white:           #fff;
+
+$color-primary:   #58e1c1;
+$color-secondary: #777;
+$color-tertiary:  #ccc;
+
+$blue:            #51ddfc;
+$red:             #e4757a;
+$purple:          #927bc1;
+$green:           #63cc82;
+$orange:          #fd7856;
+
+// Buttton background colors
+$button-background: (
+    'default':    $blue,
+    'error':      $red,
+    'info':       $purple,
+    'success':    $green,
+    'warning':    $orange,
+);
+
+// Grid background colors
+$grid-background: (
+    '1':          #927bc1, 
+    '2':          #fd7856, 
+    '3':          #deb2ee, 
+    '4':          #7ee6fd, 
+    '5':          #88d9a0, 
+    '6':          #4da2bb, 
+    '7':          #ec9fa3, 
+    '8':          #fd9f85, 
+    '9':          #e4757a, 
+    '10':         #63cc82, 
+    '11':         #51ddfc, 
+    '12':         #80e8d1,
+    );
+
+// Break point
+$br: '@media (min-width: 768px)';
+
+// Flex basis
+$flexb: 100%;

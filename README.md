@@ -1,6 +1,4 @@
-# Project Title
-
-Circles (style guide)
+# Circles (style guide)
 
 ### Goal of the project
 
